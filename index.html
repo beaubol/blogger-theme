@@ -173,8 +173,8 @@ font: $blogDescriptionFont;
 #sidebar-wrapper {
 clear:$startSide;
 }
-#main {  
-width:430px;
+#main {	
+width:100%;
 float:$endSide;
 padding:8px 0;
 margin:0;
@@ -417,46 +417,7 @@ display:none;
     <b:include data='blog' name='google-analytics'/>
   </head>
   <body>
-    <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
-      <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
-        <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
-          function setAttributeOnload(object, attribute, val) {
-          if(window.addEventListener) {
-          window.addEventListener(&#39;load&#39;,
-          function(){ object[attribute] = val; }, false);
-          } else {
-          window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
-          }
-          }
-          &lt;/script&gt;
-          &lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-          &lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
-          &lt;script type=&quot;text/javascript&quot;&gt;
-          gapi.load(&quot;iframes-styles-bubble&quot;, function() {
-          if (window.iframes &amp;&amp; iframes.open) {
-          iframes.open(
-          &#39;//www.blogger.com/navbar.g?targetBlogID\0753819482565142542336\46blogName\75Misk+AMBER\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://miskamber.blogspot.com/search\46blogLocale\75tr\46v\0752\46homepageUrl\75http://miskamber.blogspot.com/\46vt\0752414771756955004564&#39;,
-          {
-          container: &quot;navbar-iframe-container&quot;,
-          id: &quot;navbar-iframe&quot;
-          },
-          {
-          });
-          }
-          });
-          &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-          (function() {
-          var script = document.createElement(&#39;script&#39;);
-          script.type = &#39;text/javascript&#39;;
-          script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
-          var head = document.getElementsByTagName(&#39;head&#39;)[0];
-          if (head) {
-          head.appendChild(script);
-          }})();
-          &lt;/script&gt;
-        </b:includable>
-      </b:widget>
-    </b:section>
+
     <div id='outer-wrapper'>
       <div id='main-top'/> <!-- placeholder for image -->
       <div id='wrap2'><div id='wrap3'>
